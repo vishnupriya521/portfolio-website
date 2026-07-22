@@ -7,7 +7,7 @@ function Projects() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5002/projects")
+     .get("https://portfolio-website-1-dcnu.onrender.com")
       .then((response) => {
         setProjects(response.data);
       })
