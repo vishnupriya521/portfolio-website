@@ -11,16 +11,19 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import ThemeToggle from "./components/ThemeToggle";
 
+
 function App() {
 
   return (
 
     <BrowserRouter>
 
+      <ScrollToTop />
+
       <ThemeToggle />
-      
 
       <Navbar />
+
 
       <Routes>
 
@@ -29,39 +32,36 @@ function App() {
           element={<Home />} 
         />
 
-
         <Route 
           path="/projects" 
           element={<Projects />} 
         />
-
 
         <Route 
           path="/about" 
           element={<About />} 
         />
 
-
         <Route 
           path="/skills" 
           element={<Skills />} 
         />
-
 
         <Route 
           path="/contact" 
           element={<Contact />} 
         />
 
-
         <Route 
           path="/admin" 
           element={<Admin />} 
         />
 
-<Footer />
-<ScrollToTop />
       </Routes>
+
+
+      <Footer />
+
 
     </BrowserRouter>
 
